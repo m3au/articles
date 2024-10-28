@@ -1,0 +1,13 @@
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Documentation build files
+docs/build/

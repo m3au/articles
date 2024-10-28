@@ -1,0 +1,294 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint/main/schema/markdownlint-config-schema.json",
+  "default": true,
+
+  // Ignore specific files or patterns
+  "MD000": {
+    "ignore": ["./LICENSE"]
+  },
+
+  // MD001: Heading levels should only increment by one level at a time
+  "MD001": true,
+
+  // MD003: Heading style
+  // "atx" = # H1, ## H2, etc.
+  // Other options: "consistent", "atx_closed" (### H3 ###), "setext" (underlined), "setext_with_atx"
+  "MD003": {
+    "style": "atx"
+  },
+
+  // MD004: Unordered list style
+  // "consistent" = use the first style encountered in the file
+  // Other options: "asterisk", "plus", "dash"
+  "MD004": {
+    "style": "consistent"
+  },
+
+  // MD005: Consistent indentation for list items
+  "MD005": true,
+
+  // MD006: Consider starting bullet lists at the beginning of the line
+  "MD006": true,
+
+  // MD007: Unordered list indentation
+  // indent: number of spaces for list indentation (default: 2)
+  // start_indented: whether sublists should have initial indentation (default: false)
+  "MD007": {
+    "indent": 2,
+    "start_indented": false
+  },
+
+  // MD009: No trailing spaces
+  // br_spaces: number of spaces for line break (default: 2)
+  // list_item_empty_lines: allow spaces on empty list item lines (default: false)
+  // strict: disallow any trailing spaces (default: false)
+  "MD009": {
+    "br_spaces": 2,
+    "list_item_empty_lines": false,
+    "strict": false
+  },
+
+  // MD010: No hard tabs
+  // code_blocks: apply rule to code blocks (default: true)
+  // spaces_per_tab: number of spaces to use in place of a tab (default: 1)
+  "MD010": {
+    "code_blocks": true,
+    "spaces_per_tab": 2
+  },
+
+  // MD011: Reversed link syntax
+  "MD011": true,
+
+  // MD012: Multiple consecutive blank lines
+  // maximum: maximum number of consecutive blank lines (default: 1)
+  "MD012": {
+    "maximum": 1
+  },
+
+  // MD013: Line length
+  // line_length: maximum line length (default: 80)
+  // heading_line_length: maximum heading line length (default: 80)
+  // code_blocks: apply rule to code blocks (default: true)
+  // tables: apply rule to tables (default: true)
+  // headings: apply rule to headings (default: true)
+  // strict: strict length checking (default: false)
+  // stern: stern length checking (default: false)
+  "MD013": {
+    "line_length": 999999,
+    "heading_line_length": 999999,
+    "code_blocks": false,
+    "tables": false,
+    "headings": false,
+    "strict": false,
+    "stern": false
+  },
+
+  // MD014: Dollar signs used before commands without showing output
+  "MD014": true,
+
+  // MD018: No space after hash on atx style heading
+  "MD018": true,
+
+  // MD019: Multiple spaces after hash on atx style heading
+  "MD019": true,
+
+  // MD020: No space inside hashes on closed atx style heading
+  "MD020": true,
+
+  // MD021: Multiple spaces inside hashes on closed atx style heading
+  "MD021": true,
+
+  // MD022: Headings should be surrounded by blank lines
+  // lines_above: minimum number of blank lines above heading (default: 1)
+  // lines_below: minimum number of blank lines below heading (default: 1)
+  "MD022": {
+    "lines_above": 1,
+    "lines_below": 1
+  },
+
+  // MD023: Headings must start at the beginning of the line
+  "MD023": true,
+
+  // MD024: Multiple headings with the same content
+  // siblings_only: only check sibling headings (default: false)
+  "MD024": {
+    "siblings_only": true
+  },
+
+  // MD025: Single title/h1 per document
+  // level: heading level to consider as title (default: 1)
+  // front_matter_title: RegExp to match title in front matter (default: "^\s*title\s*[:=]")
+  "MD025": {
+    "level": 1,
+    "front_matter_title": "^\\s*title\\s*[:=]"
+  },
+
+  // MD026: Trailing punctuation in heading
+  // punctuation: characters to consider as punctuation (default: ".,;:!。，；：！")
+  "MD026": {
+    "punctuation": ".,;:!。，；：！"
+  },
+
+  // MD027: Multiple spaces after blockquote symbol
+  "MD027": true,
+
+  // MD028: Blank line inside blockquote
+  "MD028": true,
+
+  // MD029: Ordered list item prefix
+  // style: list style to enforce (default: "one_or_ordered")
+  // Other options: "one", "ordered", "zero"
+  "MD029": {
+    "style": "one_or_ordered"
+  },
+
+  // MD030: Spaces after list markers
+  // ul_single: spaces after unordered list marker for single-line items (default: 1)
+  // ol_single: spaces after ordered list marker for single-line items (default: 1)
+  // ul_multi: spaces after unordered list marker for multi-line items (default: 1)
+  // ol_multi: spaces after ordered list marker for multi-line items (default: 1)
+  "MD030": {
+    "ul_single": 1,
+    "ol_single": 1,
+    "ul_multi": 1,
+    "ol_multi": 1
+  },
+
+  // MD031: Fenced code blocks should be surrounded by blank lines
+  // list_items: require blank lines around list items (default: true)
+  "MD031": {
+    "list_items": true
+  },
+
+  // MD032: Lists should be surrounded by blank lines
+  "MD032": true,
+
+  // MD033: Inline HTML
+  // allowed_elements: list of allowed HTML elements (default: [])
+  "MD033": {
+    "allowed_elements": ["img", "table", "tr", "td", "br", "sub", "a", "b"]
+  },
+
+  // MD034: Bare URL used
+  "MD034": true,
+
+  // MD035: Horizontal rule style
+  // style: style to enforce (default: "consistent")
+  // Other options: "---", "***", "___"
+  "MD035": {
+    "style": "consistent"
+  },
+
+  // MD036: Emphasis used instead of a heading
+  // punctuation: characters to consider as punctuation (default: ".,;:!?。，；：！？")
+  "MD036": {
+    "punctuation": ".,;:!?。，；：！？"
+  },
+
+  // MD037: Spaces inside emphasis markers
+  "MD037": true,
+
+  // MD038: Spaces inside code span elements
+  "MD038": true,
+
+  // MD039: Spaces inside link text
+  "MD039": true,
+
+  // MD040: Fenced code blocks should have a language specified
+  // allowed_languages: list of allowed languages (default: [])
+  // language_only: only check for language specification (default: false)
+  "MD040": {
+    "allowed_languages": [],
+    "language_only": false
+  },
+
+  // MD041: First line in a file should be a top-level heading
+  // level: heading level to require (default: 1)
+  // front_matter_title: RegExp to match title in front matter (default: "^\s*title\s*[:=]")
+  "MD041": {
+    "level": 1,
+    "front_matter_title": "^\\s*title\\s*[:=]"
+  },
+
+  // MD042: No empty links
+  "MD042": true,
+
+  // MD043: Required heading structure
+  // headings: array of headings to require (default: null)
+  "MD043": false,
+
+  // MD044: Proper names should have the correct capitalization
+  // names: list of proper names (default: [])
+  // code_blocks: include code blocks (default: true)
+  "MD044": {
+    "names": [],
+    "code_blocks": true
+  },
+
+  // MD045: Images should have alternate text (alt text)
+  "MD045": true,
+
+  // MD046: Code block style
+  // style: style to enforce (default: "consistent")
+  // Other options: "fenced", "indented"
+  "MD046": {
+    "style": "consistent"
+  },
+
+  // MD047: Files should end with a single newline character
+  "MD047": true,
+
+  // MD048: Code fence style
+  // style: style to enforce (default: "consistent")
+  // Other options: "backtick", "tilde"
+  "MD048": {
+    "style": "consistent"
+  },
+
+  // MD049: Emphasis style should be consistent
+  // style: style to enforce (default: "consistent")
+  // Other options: "asterisk", "underscore"
+  "MD049": {
+    "style": "consistent"
+  },
+
+  // MD050: Strong style should be consistent
+  // style: style to enforce (default: "consistent")
+  // Other options: "asterisk", "underscore"
+  "MD050": {
+    "style": "consistent"
+  },
+
+  // MD051: Link fragments should be valid
+  "MD051": true,
+
+  // MD052: Reference links and images should use a label that is defined
+  "MD052": true,
+
+  // MD053: Link and image reference definitions should be needed
+  "MD053": true,
+
+  // MD054: Link and image style
+  // autolink: allow autolinks (default: true)
+  // inline: allow inline links (default: true)
+  // full: allow full reference links (default: true)
+  // collapsed: allow collapsed reference links (default: true)
+  // shortcut: allow shortcut reference links (default: true)
+  "MD054": {
+    "autolink": true,
+    "inline": true,
+    "full": true,
+    "collapsed": true,
+    "shortcut": true
+  },
+
+  // MD055: Table pipe style
+  // style: style to enforce (default: "consistent")
+  // Other options: "leading_and_trailing", "leading", "trailing"
+  "MD055": {
+    "style": "consistent"
+  },
+
+  // MD056: Table column count
+  "MD056": true
+}

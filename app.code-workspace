@@ -1,0 +1,44 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      ".editorconfig": true,
+      ".markdownlint.jsonc": true,
+      ".gitattributes": true,
+      ".cspell.jsonc": true,
+      ".gitignore": true,
+      ".prettierrc": true,
+      "LICENSE": true
+    },
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "files.associations": {
+      "*.json": "jsonc",
+      "LICENSE": "plaintext",
+      "commit.ai": "plaintext"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[properties]": {
+      "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[ignore]": {
+      "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[shellscript]": {
+      "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "streetsidesoftware.code-spell-checker",
+      "aaron-bond.better-comments",
+      "gruntfuggly.todo-tree",
+      "yzhang.markdown-all-in-one",
+      "esbenp.prettier-vscode"
+    ]
+  }
+}

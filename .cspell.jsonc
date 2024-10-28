@@ -1,0 +1,35 @@
+{
+  // Version of the cspell configuration file format.
+  "version": "0.2",
+  // Language to use for spell checking.
+  "language": "en",
+  // Words to include in the dictionary.
+  "words": [
+
+  ],
+  // Paths to ignore when spell checking.
+  "ignorePaths": [
+    "app.code-workspace",
+    ".editorconfig",
+    ".markdownlint.jsonc",
+    ".gitattributes",
+    ".gitignore",
+    ".prettierrc"
+  ],
+  // Language settings for spell checking.
+  "languageSettings": [
+    {
+      // Applies to all languages.
+      "languageId": "*",
+      // Locale to use for spell checking.
+      "locale": "en",
+      // Whether to use case-sensitive spell checking.
+      "caseSensitive": false
+    }
+  ],
+  // Dictionaries to use for spell checking.
+  "dictionaries": [
+    "en_US",
+    "softwareTerms"
+  ]
+}
