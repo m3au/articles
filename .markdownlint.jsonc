@@ -166,7 +166,7 @@
   // MD033: Inline HTML
   // allowed_elements: list of allowed HTML elements (default: [])
   "MD033": {
-    "allowed_elements": ["img", "table", "tr", "td", "br", "sub", "a", "b"]
+    "allowed_elements": ["img", "table", "tr", "td", "br", "sub", "a", "b", "video", "source"]
   },
 
   // MD034: Bare URL used

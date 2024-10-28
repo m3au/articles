@@ -5,7 +5,11 @@
   "language": "en",
   // Words to include in the dictionary.
   "words": [
-
+    "Arvind",
+    "CERRE",
+    "Douek",
+    "JIPITEC",
+    "Narayanan"
   ],
   // Paths to ignore when spell checking.
   "ignorePaths": [
@@ -14,7 +18,8 @@
     ".markdownlint.jsonc",
     ".gitattributes",
     ".gitignore",
-    ".prettierrc"
+    ".prettierrc",
+    "LICENSE"
   ],
   // Language settings for spell checking.
   "languageSettings": [
