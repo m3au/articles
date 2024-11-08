@@ -5,11 +5,20 @@
   "language": "en",
   // Words to include in the dictionary.
   "words": [
+    "ACCC",
+    "anonymization",
     "Arvind",
     "CERRE",
+    "CIGI",
+    "Cyberstorm",
     "Douek",
     "JIPITEC",
-    "Narayanan"
+    "monetizable",
+    "Narayanan",
+    "preferencing",
+    "transformative",
+    "vectoralism",
+    "Xenowar"
   ],
   // Paths to ignore when spell checking.
   "ignorePaths": [

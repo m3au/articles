@@ -1,0 +1,40 @@
+
+What are Tokens?
+Tokens are digital assets created on a blockchain. There are two main types:
+Fungible Tokens (like ERC-20): These are like regular money. Each token is the same as another. Think of them like dollars or bitcoins.
+Non-Fungible Tokens (NFTs, like ERC-721): These are unique items. Each token is different from another. Think of them like collectibles or artworks.
+Testing Tokens
+When you want to make sure these tokens work correctly, you need to test them. But because they're different, the way you test them is also different.
+
+Testing Fungible Tokens (ERC-20)
+Interchangeable: All tokens are the same, so you test if you can send and receive them easily.
+Balance Checks: Make sure the right amounts are being sent and received.
+Transfers: Ensure tokens move from one account to another correctly.
+Testing Non-Fungible Tokens (ERC-721)
+Unique Items: Each token is different, so you need to check their unique properties.
+Ownership: Test who owns which token and if ownership can be transferred.
+Metadata: Each token might have extra information (like an image or description). Make sure this data is correct.
+Tools for Testing
+Truffle: A framework for developing and testing smart contracts.
+Mocha: A JavaScript test framework that can be used with Truffle for writing tests.
+Why Test?
+Testing ensures that the tokens work as expected and are secure, preventing any potential issues when they are used in real-world applications.
+
+In summary, testing fungible and non-fungible tokens involves different steps because fungible tokens are like regular money (all the same), while non-fungible tokens are like unique collectibles (each one is different).
+
+Certainly! Here's a simplified table comparing the testing aspects of fungible and non-fungible tokens:
+
+| Aspect                | Fungible Tokens (ERC-20)                         | Non-Fungible Tokens (ERC-721)                      |
+|-----------------------|--------------------------------------------------|---------------------------------------------------|
+| **Interchangeability**| All tokens are identical and interchangeable.    | Each token is unique and not interchangeable.     |
+| **Balance Checks**    | Verify correct amounts are sent and received.    | Not applicable (focus on individual token ownership). |
+| **Transfers**         | Ensure tokens move correctly between accounts.   | Ensure ownership transfers correctly between accounts. |
+| **Unique Properties** | Not applicable.                                  | Verify each token's unique properties and metadata. |
+| **Ownership**         | Not a primary focus (more about balances).       | Verify who owns which specific token.             |
+| **Metadata**          | Not applicable.                                  | Ensure the accuracy of additional data (e.g., images, descriptions). |
+
+This table highlights the key differences in testing between fungible and non-fungible tokens.
+
+make github examples
+make sure to use her mock strategy
+[ ] Test a smart contract pilot

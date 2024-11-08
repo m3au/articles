@@ -1,0 +1,81 @@
+{
+  "name": "xempus-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "description": "Playwright tests for Xempus",
+  "author": "Xempus",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "a": "npm test -- --config=./test-suites/setup-validation-check.ts",
+    "setupValidationCheck": "npm test -- --config=./test-suites/setup-validation-check.ts",
+    "bump": "npx npm-check-updates \\!@playwright/test -u && npm install",
+    "clean": "npx delete-empty && git clean -fXd",
+    "contract": "npm test -- --config=./test-suites/contract.ts",
+    "dev": "npm test -- --debug",
+    "docs:dependencies": "npx package-json-to-readme package.json",
+    "docs:sort:package.json": "npx sort-package-json",
+    "env": "cp .env.template .env",
+    "fix": "eslint . --fix && tsc --noEmit -p .",
+    "postinstall": "npx playwright install",
+    "lfs-normalize": "git add --renormalize .",
+    "lint": "eslint . && tsc --noEmit -p .",
+    "lint:ts": "tsc --noEmit -p .",
+    "lint:eslint": "eslint .",
+    "load": "npm test -- --config=./test-suites/load-tests.ts",
+    "onpush": "npm test -- --config=./test-suites/onpush.ts",
+    "orders": "npm test -- --config=./test-suites/orders.ts",
+    "platform": "npm test -- --config=./test-suites/platform.ts",
+    "postrelease:advisor": "npm test -- --config=./test-suites/postrelease-advisor.ts",
+    "postrelease:manager": "npm test -- --config=./test-suites/postrelease-manager.ts",
+    "registration": "npm test -- --config=./test-suites/registration.ts",
+    "regression": "npm test -- --config=./test-suites/regression.ts",
+    "report": "playwright show-report reports/html-report",
+    "sanity": "npm test -- --config=./test-suites/sanity.ts",
+    "sanity:registration": "npm run registration -- --grep=sanity",
+    "smoke": "npm test -- --config=./test-suites/smoke.ts",
+    "smoke:registration": "npm run registration -- --grep=smoke",
+    "test": "playwright test"
+  },
+  "prettier": "@meowsos/prettier-config",
+  "eslintConfig": {
+    "extends": "@meowsos/eslint-config",
+    "rules": {
+      "playwright/expect-expect": 0,
+      "playwright/no-networkidle": 0,
+      "playwright/no-skipped-test": 0,
+      "playwright/no-focused-test": 1,
+      "playwright/valid-title": 0,
+      "unicorn/no-nested-ternary": "off"
+    }
+  },
+  "dependencies": {
+    "@xbav/themes": "^3.40.0",
+    "chalk": "^5.3.0",
+    "chance": "^1.1.11",
+    "console-table-printer": "^2.12.0",
+    "csv": "^6.3.8",
+    "csv-parse": "^5.5.5",
+    "dotenv": "^16.4.5",
+    "dotenv-parse-variables": "^2.0.0",
+    "luxon": "^3.4.4",
+    "path": "^0.12.7",
+    "properties-reader": "^2.3.0",
+    "url": "^0.11.3"
+  },
+  "devDependencies": {
+    "@cucumber/gherkin": "^28.0.0",
+    "@meowsos/eslint-config": "^1.1.9",
+    "@meowsos/prettier-config": "^1.1.7",
+    "@playwright/test": "1.42.1",
+    "@types/chance": "^1.1.6",
+    "@types/dotenv-parse-variables": "^2.0.3",
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^20.11.30",
+    "@types/properties-reader": "^2.1.3",
+    "typescript": "^5.4.3"
+  }
+}

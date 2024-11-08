@@ -1,0 +1,16 @@
+
+http: linkedinprofile
+Recently watched Soumaya Erradi's session from WeAreDevelopers LIVE - Web3 Day, where she shared insights on testing for Web3 and smart contracts. Her presentation offered practical advice on setting up test environments with Cypress and emphasized the role of providers in blockchain applications.
+
+Soumaya also discussed the specifics of handling both fungible and non-fungible tokens within a test framework, which is crucial for developers in this space. Her analysis of the energy consumption and security considerations in blockchain networks provided a realistic perspective on these issues.
+
+https://www.youtube.com/live/M6aQIRf0h_U?si=73mzmSQhCDNaylBN
+For a deep dive into the technical aspects of Web3 testing, Soumaya Erradi's talk is a valuable resource. Check out the full session here: Soumaya Erradi at WeAreDevelopers LIVE - Web3 Day
+
+https:postHERE
+If you want want to learn more about testing FTs vs NFTs, check this other post:
+
+
+#Web3 #Blockchain #SmartContracts #Testing #WeAreDevelopers
+
+---

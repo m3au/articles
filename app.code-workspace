@@ -6,13 +6,13 @@
   ],
   "settings": {
     "files.exclude": {
-      ".editorconfig": true,
-      ".markdownlint.jsonc": true,
-      ".gitattributes": true,
-      ".cspell.jsonc": true,
-      ".gitignore": true,
-      ".prettierrc": true,
-      "LICENSE": true
+      // ".editorconfig": true,
+      // ".markdownlint.jsonc": true,
+      // ".gitattributes": true,
+      // ".cspell.jsonc": true,
+      // ".gitignore": true,
+      // ".prettierrc": true,
+      // "LICENSE": true
     },
     "editor.formatOnPaste": false,
     "editor.formatOnSave": true,
